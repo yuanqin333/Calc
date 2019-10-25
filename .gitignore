@@ -57,3 +57,4 @@ mintty.exe.stackdump
 .idea/
 *.iml
 .allure/
+.svn
