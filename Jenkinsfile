@@ -18,7 +18,7 @@ node('win') {
     }
     stage('Results') {
         junit '**/target/surefire-reports/TEST-*.xml'
-        archiveArtifacts 'target/*.jar'
+        archiveArtifacts 'target/*.jar', fingerprint: true
         jacoco()
     }
 }
