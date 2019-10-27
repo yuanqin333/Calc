@@ -36,4 +36,8 @@ public class Calc {
 		return x * x ;
 	}
 
+	public double pow() {
+		return (int)x ^ (int)y;
+	}
+
 }
