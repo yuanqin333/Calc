@@ -36,7 +36,7 @@ public class CalcTest {
 
 	@Test
 	public void testSquare() {
-		result = 40;
+		result = 400;
 		assertEquals(result, myTest.square(), .01);
 	}
 }
