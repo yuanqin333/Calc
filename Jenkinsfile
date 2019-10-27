@@ -13,7 +13,7 @@ node('win') {
                 "JAVA_HOME=$javaHome",
                 "PATH=$javaHome\bin:$PATH"
         ]) {
-            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+            bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
         }
     }
     stage('Results') {
