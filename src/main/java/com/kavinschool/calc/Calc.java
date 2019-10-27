@@ -24,4 +24,16 @@ public class Calc {
 		return x / y;
 	}
 
+	public double rem() {
+		return x % y;
+	}
+
+	public double cube() {
+		return x * x * x;
+	}
+
+	public double square() {
+		return x * x ;
+	}
+
 }

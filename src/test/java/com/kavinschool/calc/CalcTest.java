@@ -33,4 +33,10 @@ public class CalcTest {
 		result = 2;
 		assertEquals(result, myTest.div(), .01);
 	}
+
+	@Test
+	public void testSquare() {
+		result = 40;
+		assertEquals(result, myTest.square(), .01);
+	}
 }
