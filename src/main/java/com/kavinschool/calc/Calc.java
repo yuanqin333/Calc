@@ -32,4 +32,8 @@ public class Calc {
 		return x * x * x;
 	}
 
+	public double square() {
+		return x * x ;
+	}
+
 }
