@@ -28,4 +28,8 @@ public class Calc {
 		return x % y;
 	}
 
+	public double cube() {
+		return x * x * x;
+	}
+
 }
