@@ -24,4 +24,8 @@ public class Calc {
 		return x / y;
 	}
 
+	public double rem() {
+		return x % y;
+	}
+
 }
