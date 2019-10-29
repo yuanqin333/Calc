@@ -11,13 +11,13 @@ public class CalcTest {
 
 	@Test
 	public void testAdd() {
-		result = 40;
+		result = 30;
 		assertEquals(result, myTest.add(), .01);
 	}
 
 	@Test
 	public void testMul() {
-		result = 201;
+		result = 200;
 		assertEquals(result, myTest.mul(), .01);
 
 	}
@@ -37,6 +37,12 @@ public class CalcTest {
 	@Test
 	public void testSquare() {
 		result = 400;
+		assertEquals(result, myTest.square(), .01);
+	}
+	
+	@Test
+	public void testTriple() {
+		result = 8000;
 		assertEquals(result, myTest.square(), .01);
 	}
 }
