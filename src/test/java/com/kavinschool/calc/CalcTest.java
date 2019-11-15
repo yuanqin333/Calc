@@ -41,8 +41,8 @@ public class CalcTest {
 	}
 	
 	@Test
-	public void testTriple() {
+	public void testCube() {
 		result = 8000;
-		assertEquals(result, myTest.triple(), .01);
+		assertEquals(result, myTest.cube(), .01);
 	}
 }
