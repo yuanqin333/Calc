@@ -43,6 +43,6 @@ public class CalcTest {
 	@Test
 	public void testTriple() {
 		result = 8000;
-		assertEquals(result, myTest.square(), .01);
+		assertEquals(result, myTest.triple(), .01);
 	}
 }
