@@ -21,11 +21,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean cobertura:cobertura'
-    codeCoverageToolOption: Cobertura
+    #codeCoverageToolOption: Cobertura
 
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/Calc/**/site/cobertura/coverage.xml'
-    pathToSources: '$(System.DefaultWorkingDirectory)/Calc/src/main/java/'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/Calc/**/site/cobertura'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/**/site/cobertura/coverage.xml'
+    pathToSources: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/src/main/java/'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/**/site/cobertura'
