@@ -26,6 +26,6 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/**/site/cobertura/coverage.xml'
-    pathToSources: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/src/main/java/'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/kpassoubady.Calc/**/site/cobertura'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/**/site/cobertura/coverage.xml'
+    pathToSources: '$(System.DefaultWorkingDirectory)/**/src/main/java/'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/**/site/cobertura'
