@@ -20,7 +20,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'clean cobertura:cobertura'
+    goals: 'cobertura:cobertura'
     #codeCoverageToolOption: Cobertura
 
 - task: PublishCodeCoverageResults@1
