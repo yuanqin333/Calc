@@ -15,6 +15,16 @@
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
         <cobertura-maven-plugin.version>2.5</cobertura-maven-plugin.version>
+        <sonar.sources>src/main/java/com/kavinschool/calc</sonar.sources>
+        <sonar.tests>src/test/java/com/kavinschool/calc</sonar.tests>
+        <sonar.coverage.exclusions></sonar.coverage.exclusions>
+        <sonar.links.homepage>https://sonarqube-azureappservice6526.azurewebsites.net/dashboard?id=SimpleCalculator
+        </sonar.links.homepage>
+        <sonar.host.url>https://sonarqube-azureappservice6526.azurewebsites.net</sonar.host.url>
+        <sonar.projectKey>SimpleCalculator</sonar.projectKey>
+        <sonar.projectName>SimpleCalculator</sonar.projectName>
+        <!--        <sonar.exclusions>src/main/java</sonar.exclusions>-->
+        <!--        <sonar.test.inclusions>src/test/java/com/kavinschool/calc</sonar.test.inclusions>-->
     </properties>
     <dependencies>
         <dependency>
@@ -36,15 +46,15 @@
         </dependency>
     </dependencies>
     <build>
-   <pluginManagement>
-    <plugins>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.6.0.1398</version>
-      </plugin>
-    </plugins>
-  </pluginManagement>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.6.0.1398</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
