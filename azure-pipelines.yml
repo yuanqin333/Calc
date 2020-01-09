@@ -41,7 +41,10 @@ steps:
     targetPath: '$(Pipeline.Workspace)'
     artifact: 'CalcArtifacts'
     publishLocation: 'pipeline'
-
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
