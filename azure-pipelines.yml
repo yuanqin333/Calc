@@ -36,7 +36,6 @@ steps:
     ArtifactName: 'calc'
     publishLocation: 'Container'
 
-
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
